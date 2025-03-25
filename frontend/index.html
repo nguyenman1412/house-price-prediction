@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House Price Predictor</title>
+  <!-- Bootstrap CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">House Price Predictor</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="jumbotron text-center">
+    <h1 class="display-4" style="color: aquamarine; font-weight: bold;">Find Your Home's Value</h1>
+    <p class="lead" style="color: aquamarine; font-weight: bold;">Enter your house details to get a quick estimate!</p>
+  </header>
+
+  <!-- Prediction Form -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="predictionForm" class="card p-4 shadow-sm">
+          <h4 class="mb-3">House Details</h4>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="lotArea">Lot Area</label>
+              <input type="number" class="form-control" id="lotArea" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="overallQual">Overall Quality</label>
+              <input type="number" class="form-control" id="overallQual" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="overallCond">Overall Condition</label>
+              <input type="number" class="form-control" id="overallCond" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="yearBuilt">Year Built</label>
+              <input type="number" class="form-control" id="yearBuilt" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="totalBsmtSF">Total Basement SF</label>
+              <input type="number" class="form-control" id="totalBsmtSF" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="grLivArea">Above Grade Living Area (SF)</label>
+              <input type="number" class="form-control" id="grLivArea" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="fullBath">Full Bathrooms</label>
+              <input type="number" class="form-control" id="fullBath" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="bedroomAbvGr">Bedrooms Above Grade</label>
+              <input type="number" class="form-control" id="bedroomAbvGr" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="totRmsAbvGrd">Total Rooms Above Grade</label>
+            <input type="number" class="form-control" id="totRmsAbvGrd" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Predict Price</button>
+        </form>
+
+        <!-- Result Display -->
+        <div id="result" class="mt-4 text-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and jQuery JS (optional for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <!-- Custom JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# .gitignore
+
+# Ignore Python cache and environment files
+__pycache__/
+*.pyc
+env/
+venv/
+
+# Ignore model files if they are large
+*.joblib
+*.pkl
+
+# Ignore local OS files
+.DS_Store
