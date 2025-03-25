@@ -25,17 +25,20 @@ house-price-prediction/
    cd backend
    pip install -r requirements.txt
    python app.py
-   The Flask API will start at http://localhost:5100 by default.
+
+The Flask API will start at http://localhost:5100 by default.
 2.	**Frontend**
-	•	Open frontend/index.html in your browser OR
-	•	Serve it locally:
+	• Open frontend/index.html in your browser OR
+	• Serve it locally:
+ 
     cd frontend
     python -m http.server 8000
 Visit http://localhost:8000 and enter house details to see the prediction.
 **Docker (Optional)**
 	• You can also run the backend in Docker:
+ 
     cd backend
     docker build -t house-price-app .
     docker run -p 5100:5100 house-price-app
     
-    Then access the API at http://localhost:5100.
+Then access the API at http://localhost:5100.
